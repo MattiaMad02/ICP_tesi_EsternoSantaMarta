@@ -30,7 +30,7 @@ map_pcd = o3d.io.read_point_cloud(target_file)
 map_pcd = map_pcd.voxel_down_sample(voxel_size)
 map_pcd.estimate_normals()
 
-# --- CARICAMENTO DELLE ALTRE POINT CLOUD --
+# --- CARICAMENTO DELLE ALTRE POINT CLOUD -
 source_files = df.loc[1:, "file"].tolist()
 point_clouds = [o3d.io.read_point_cloud(f) for f in source_files]
 
