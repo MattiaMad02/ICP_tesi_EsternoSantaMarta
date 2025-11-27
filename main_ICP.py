@@ -40,7 +40,7 @@ for i in range(len(point_clouds)):
     pcd.estimate_normals()
     point_clouds[i] = pcd
 
-# --- CREAZIONE CARTELLA RISULTATI ---
+# --- CREAZIONE CARTELLA RISULTATI --
 save_folder = os.path.join(project_folder, "icp_results")
 os.makedirs(save_folder, exist_ok=True)
 
