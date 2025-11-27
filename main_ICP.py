@@ -71,7 +71,7 @@ for i, source in enumerate(point_clouds):
         f"Frame {i+1}: {source_files[i]}, Fitness={reg_icp.fitness:.4f}, RMSE={reg_icp.inlier_rmse:.4f}\n"
     )
 
-    # Aggiorna la mappa cumulativa
+    # Aggiorna la mappa cumulativ
     map_pcd += source
     map_pcd = map_pcd.voxel_down_sample(voxel_size)
     map_pcd.estimate_normals()
