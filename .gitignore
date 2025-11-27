@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Point clouds (evita file enormi nel repo)
+*.ply
+*.pcd
+*.xyz
+
+# Output ICP
+icp_results/
+complete_map.ply
+
+# CSV, data raw
+*.npy
+*.npz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
