@@ -34,7 +34,7 @@ map_pcd.estimate_normals()
 source_files = df.loc[1:, "file"].tolist()
 point_clouds = [o3d.io.read_point_cloud(f) for f in source_files]
 
-# --- PREPROCESSING ---
+# --- PREPROCESSING --
 for i in range(len(point_clouds)):
     pcd = point_clouds[i].voxel_down_sample(voxel_size)
     pcd.estimate_normals()
