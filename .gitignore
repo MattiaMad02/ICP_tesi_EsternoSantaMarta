@@ -15,9 +15,6 @@ env/
 *.pcd
 *.xyz
 
-# Output ICP
-icp_results/
-icp_noFilter_results/
 # CSV, data raw
 *.npy
 *.npz
